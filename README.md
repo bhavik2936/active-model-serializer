@@ -1,24 +1,32 @@
-# README
+# Active Model Serializer
+Demonstrates Model Serializing for `rails` APIs differentiated by versions.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
+The project have been implemented to serve versioned APIs in ruby on rails framework.
+It serves serialize data objects over the network by `active_model_serializers` gem.
 
-Things you may want to cover:
+## Install
+To setup project locally, follow below instructions.
 
-* Ruby version
+### Project Configuration
+Have ruby version [ruby-2.7.1](https://www.ruby-lang.org/en/news/2020/03/31/ruby-2-7-1-released) installed as mentioned in Gemfile.
 
-* System dependencies
+Install necessary dependencies.
+```bash
+# install dependencies mentioned in Gemfile
+$ bundle install
 
-* Configuration
+# verification of already installed files in node_modules
+$ yarn install --check-files
+```
 
-* Database creation
+### Database Setup
+Create and Initialize database.
+```bash
+# migration of database
+$ rails db:migrate
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# initialization of database with data
+# defined in seed file
+$ rails db:seed
+```
